@@ -1,19 +1,196 @@
-h1 {
-    color: #2c3e50;
-    font-size: 2.5em;
-    margin-bottom: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-h2 {
+body {
+    background-color: #f5f5f5;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #2c3e50;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
     color: #3498db;
-    font-size: 2em;
-    margin-bottom: 15px;
 }
 
-h3 {
-    color: #e74c3c;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-h1{
-    color: aqua;
+/* Sección Hero */
+.hero {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Sección de Importancia de la Visión */
+.importancia-vision {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.contenido-vision {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.texto-vision {
+    flex: 1;
+}
+
+.texto-vision h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.texto-vision p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.imagen-vision {
+    flex: 1;
+}
+
+.imagen-vision img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .contenido-vision {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .imagen-vision img {
+        max-width: 100%;
+    }
+}
+
+/* Sección de Productos */
+.productos {
+    padding: 4rem 2rem;
+}
+
+.productos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.producto {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.producto h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.producto p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.producto button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .catalogo {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }

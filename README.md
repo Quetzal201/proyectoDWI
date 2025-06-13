@@ -5,10 +5,10 @@ El objetivo de nuestro proyecto es tener la pagina web de una optica que nos per
 
 Integrantes y roles <br>
 -Pedro Saul: Administrador <br>
--Daniel Isaias: documentador
--Domingo Gonzalez: Diseñador
--David Vidaña: Intehgrador
--Jose Gustavo: Integrador
+-Daniel Isaias: documentador <br>
+-Domingo Gonzalez: Diseñador <br>
+-David Vidaña: Intehgrador <br>
+-Jose Gustavo: Integrador <br>
 
 Flujo de trabajo
 
